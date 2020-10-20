@@ -9,7 +9,7 @@ COPY epel.repo /etc/yum.repos.d/
 COPY timezone /etc/
 
 RUN yum makecache && \
-yum install -y net-tools nmap-ncat telnet net-tools jq curl openssl wget openssl-devel kde-l10n-Chinese glibc-common && \
+yum install -y net-tools nmap-ncat telnet net-tools jq curl openssl wget openssl-devel kde-l10n-Chinese glibc-common  bzip2&& \
 yum clean all && \
 rm -rf /var/cache/yum && \
 rm -rf /anaconda-post.log && \
